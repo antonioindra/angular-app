@@ -1,0 +1,22 @@
+<div>
+  <label>Nombre: {{nombre}}</label>
+  <br>
+  {{lista}}
+  {{objeto.id}}
+  {{objeto.titulo}}
+  {{objeto | json}}
+
+
+
+<div >
+  <ul>
+    <li *ngFor ="let nombre of lista">{{nombre}}</li>
+  </ul>
+  <input type="text" [(ngModel)]="nombre">
+  <button (click)="agregarNombre(nombre)">
+    Agregar Nombre
+  </button>
+
+</div>
+</div>
+
